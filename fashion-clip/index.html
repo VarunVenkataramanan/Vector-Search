@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Image Search</title>
+</head>
+<body>
+    <h1>Fashion Image Search</h1>
+    <form method="POST" action="/">
+        <input type="text" name="query" placeholder="Enter query" value="{{ request.form.query if request.form.query else '' }}">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <div>
+        {% for image, text,vals in results %}
+        <img src="{{ image }}" alt="Result Image">
+        <p>{{ text }}</p>
+        <p>{{ vals }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>
