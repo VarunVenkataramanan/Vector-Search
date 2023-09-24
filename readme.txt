@@ -10,6 +10,3 @@ The only file of interests are -
 Select the respective names to open in a new tab
 All the other files are used in the github from where we took this project
 In another tab, run "docker compose exec search bash", if you want to open a terminal in this container
-
-Download the dataset from :
-	https://drive.google.com/drive/folders/18OAaEwzvno_zEk9q3xEGEvdpEFc5UuRT?usp=sharing
